@@ -21,6 +21,7 @@ class Tweets:
 class TwitterApp:
     def __init__(self):
         # Load credentials from json file
+        # Must have the Tweeter developers' key for accessing the twitter API
         with open("twitter_credentials.json", "r") as file:
             creds = json.load(file)
 
